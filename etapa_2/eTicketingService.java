@@ -1,8 +1,11 @@
-package proiectPAO_1;
+package etapa_2;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
 
-public class servicii {
+public class eTicketingService {
     public Client readClient() {
         System.out.println();
         Scanner scanner = new Scanner(System.in);
@@ -182,6 +185,10 @@ public class servicii {
         {
             System.out.println("Clientul " + client.getNume() + " cu varsta " + client.getVarsta());
         }
+
+        // log into CSV file
+        AuditService.logAuditFile("afiseazaClientiDupaVarsta");
+
     }
 
     public void afiseazaClientiCuReducere(Eveniment eveniment)
@@ -197,6 +204,12 @@ public class servicii {
                     ((TichetReducere) tichet).getTipReducere() + " a primit discount de " +
                         ((TichetReducere) tichet).getDiscount());
         }
+
+
+        // log into CSV file
+        AuditService.logAuditFile("afiseazaClientiCuReducere");
+
+
     }
 
     public void afiseazaPlatileTichetelor(Eveniment eveniment)
@@ -221,6 +234,11 @@ public class servicii {
                 + plataTichet.getTichet().getClient().getNume());
             }
         }
+
+
+        // log into CSV file
+        AuditService.logAuditFile("afiseazaPlatileTichetelor");
+
     }
 
     public Integer calculeazaVenituri(Eveniment eveniment)
@@ -236,7 +254,15 @@ public class servicii {
                 venituri += tichet.getPlata().plata;
             }
         }
+
+
+        // log into CSV file
+        AuditService.logAuditFile("calculeazaVenituri");
+
+
         return venituri;
+
+
     }
 
     public void afiseazaPlatileClientului(Client client)
@@ -268,5 +294,9 @@ public class servicii {
                 }
             }
         }
+
+        // log into CSV file
+        AuditService.logAuditFile("afiseazaPlatileClientului");
+
     }
 }

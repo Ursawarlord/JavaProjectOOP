@@ -1,4 +1,4 @@
-package proiectPAO_1;
+package etapa_1;
 
 import java.util.HashSet;
 import java.util.Set;

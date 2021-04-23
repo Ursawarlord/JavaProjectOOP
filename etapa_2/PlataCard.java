@@ -1,6 +1,6 @@
-package proiectPAO_1;
+package etapa_2;
 
-public class PlataCard extends Plata{
+public class PlataCard extends Plata {
     private Integer nrRate;
     private Card cardPlatitor;
 

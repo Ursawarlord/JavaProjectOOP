@@ -1,4 +1,4 @@
-package proiectPAO_1;
+package etapa_1;
 
 public class TichetReducere extends Tichet{
     private Integer discount;

@@ -1,4 +1,4 @@
-package proiectPAO_1;
+package etapa_1;
 
 abstract public class Plata {
     protected Integer plata;

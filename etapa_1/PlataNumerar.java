@@ -1,4 +1,4 @@
-package proiectPAO_1;
+package etapa_1;
 
 public class PlataNumerar extends Plata{
     public PlataNumerar(Integer plata) {
