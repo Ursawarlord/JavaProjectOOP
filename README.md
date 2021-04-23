@@ -1,4 +1,7 @@
-# proiectPAO1 - Frîncu Mădălin, grupa 232
+# proiectPAO - Frîncu Mădălin, grupa 232
+
+✔️ Etapa 1
+✔️ Etapa 2
 
 ### Tipuri de obiecte
 1. Card
