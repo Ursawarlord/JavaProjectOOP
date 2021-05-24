@@ -4,6 +4,8 @@
 
 ✔️ Etapa 2
 
+✔️ Etapa 3
+
 ### Tipuri de obiecte
 1. Card
 2. Eveniment
