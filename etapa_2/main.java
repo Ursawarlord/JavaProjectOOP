@@ -1,6 +1,6 @@
 package etapa_2;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 public class main {
@@ -28,11 +28,6 @@ public class main {
         var service = WriteFilesService.getInstance();
         service.writeTichet(tichet, path);
     }
-
-
-
-
-
 
     public static List<Client> ReadFromFile_Clients(String path)
     {
